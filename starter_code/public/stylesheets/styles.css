@@ -5,4 +5,142 @@ dark-blue: #0A2C42;
 grey: rgba(145, 145, 145, 0.481);
 font-family: Arial, Helvetica, sans-serif
 */
-  
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-bottom: 3vh !important;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+#nav {
+  background-color: #2081c3;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.nav-item {
+  margin-right: 7px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #0a2c42;
+  color: white;
+  letter-spacing: 0.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+/* INDEX.HBS */
+
+.btn {
+  color: white;
+  background-color: #2081c3;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #0a2c42;
+}
+
+#index-container {
+  max-width: 300px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#index-container > * {
+  margin-bottom: 5vh;
+}
+
+#beer-img {
+  width: 100%;
+}
+
+/* BEERS.hbs */
+#beers-container {
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+
+#beers-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.my-card {
+  min-width: 250px;
+  width: 31%;
+  max-height: 90vh;
+  margin-bottom: 5vh;
+  padding: 3%;
+  background-color: rgba(145, 145, 145, 0.301);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 0.8rem;
+}
+
+.my-card > * {
+  margin: 8px 0;
+}
+
+.my-card img {
+  height: 120px;
+  align-self: center;
+}
+
+.beer-card-name {
+  margin-bottom: 2px;
+}
+
+.beer-card-tagline {
+  color: rgba(145, 145, 145, 0.481);
+  margin-top: 0;
+}
+
+/* RANDOM Beer */
+
+.one-card {
+  width: 100%;
+  height: 70vh;
+  padding: 3%;
+  background-color: rgba(145, 145, 145, 0.301);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.2rem;
+}
+
+.one-card > * {
+  margin: 16px 0;
+}
+
+.one-card img {
+  height: 45%;
+  align-self: center;
+}
+
+.one-card .beer-card-name {
+  margin-bottom: 6px;
+}
+
+.one-card .beer-card-tagline {
+  color: rgba(145, 145, 145, 0.481);
+  margin-top: 0;
+}
